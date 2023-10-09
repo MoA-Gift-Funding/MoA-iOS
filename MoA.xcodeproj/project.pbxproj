@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F224BE262ACAB29D009021D8 /* EnterUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F224BE242ACAB29D009021D8 /* EnterUserInfoViewController.swift */; };
+		F224BE272ACAB29D009021D8 /* EnterUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F224BE252ACAB29D009021D8 /* EnterUserInfoViewController.xib */; };
+		F224BE302AD383AB009021D8 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = F224BE2F2AD383AB009021D8 /* KakaoSDK */; };
 		F286B3E42A88F3BB00295449 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F286B3E22A88F3BB00295449 /* SignInViewController.swift */; };
 		F286B3E52A88F3BB00295449 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F286B3E32A88F3BB00295449 /* SignInViewController.xib */; };
 		F2FAC46A2A7654F2003D52DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FAC4692A7654F2003D52DC /* AppDelegate.swift */; };
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F224BE242ACAB29D009021D8 /* EnterUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterUserInfoViewController.swift; sourceTree = "<group>"; };
+		F224BE252ACAB29D009021D8 /* EnterUserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnterUserInfoViewController.xib; sourceTree = "<group>"; };
 		F286B3E22A88F3BB00295449 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F286B3E32A88F3BB00295449 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		F2FAC4662A7654F2003D52DC /* MoA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F224BE302AD383AB009021D8 /* KakaoSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +120,8 @@
 		F286B3EA2A88F4E600295449 /* SigeIn */ = {
 			isa = PBXGroup;
 			children = (
+				F224BE242ACAB29D009021D8 /* EnterUserInfoViewController.swift */,
+				F224BE252ACAB29D009021D8 /* EnterUserInfoViewController.xib */,
 				F286B3E22A88F3BB00295449 /* SignInViewController.swift */,
 				F286B3E32A88F3BB00295449 /* SignInViewController.xib */,
 			);
@@ -184,6 +192,7 @@
 			);
 			name = MoA;
 			packageProductDependencies = (
+				F224BE2F2AD383AB009021D8 /* KakaoSDK */,
 			);
 			productName = MoA;
 			productReference = F2FAC4662A7654F2003D52DC /* MoA.app */;
@@ -258,6 +267,7 @@
 			);
 			mainGroup = F2FAC45D2A7654F2003D52DC;
 			packageReferences = (
+				F224BE2E2AD383AB009021D8 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 			);
 			productRefGroup = F2FAC4672A7654F2003D52DC /* Products */;
 			projectDirPath = "";
@@ -275,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F224BE272ACAB29D009021D8 /* EnterUserInfoViewController.xib in Resources */,
 				F2FAC4762A7654F5003D52DC /* LaunchScreen.storyboard in Resources */,
 				F286B3E52A88F3BB00295449 /* SignInViewController.xib in Resources */,
 				F2FAC4732A7654F5003D52DC /* Assets.xcassets in Resources */,
@@ -302,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F224BE262ACAB29D009021D8 /* EnterUserInfoViewController.swift in Sources */,
 				F286B3E42A88F3BB00295449 /* SignInViewController.swift in Sources */,
 				F2FAC46A2A7654F2003D52DC /* AppDelegate.swift in Sources */,
 				F2FAC46C2A7654F2003D52DC /* SceneDelegate.swift in Sources */,
@@ -480,6 +492,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -507,6 +520,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -636,6 +650,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F224BE2E2AD383AB009021D8 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F224BE2F2AD383AB009021D8 /* KakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F224BE2E2AD383AB009021D8 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F2FAC45E2A7654F2003D52DC /* Project object */;
 }
