@@ -8,12 +8,18 @@
 import UIKit
 import Foundation
 import KakaoSDKUser
+import NaverThirdPartyLogin
 
 class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NaverThirdPartyLoginConnection.getSharedInstance().delegate = self
+    }
+    
+    @IBAction func naverButtonDidTap(_ sender: UIButton) {
+        NaverThirdPartyLoginConnection.getSharedInstance().requestThirdPartyLogin()
     }
     
     @IBAction func kakaoButtonDidTap(_ sender: UIButton) {
@@ -56,5 +62,24 @@ class SignInViewController: UIViewController {
                 }*/
             }
         }
+    }
+}
+
+extension SignInViewController: NaverThirdPartyLoginConnectionDelegate {
+    func oauth20ConnectionDidFinishRequestACTokenWithAuthCode() {
+        print("Success login")
+    }
+    
+    func oauth20ConnectionDidFinishRequestACTokenWithRefreshToken() {
+        guard let accessToken = NaverThirdPartyLoginConnection.getSharedInstance()?.accessToken else { return }
+        print(accessToken)
+    }
+    
+    func oauth20ConnectionDidFinishDeleteToken() {
+        print("log out")
+    }
+    
+    func oauth20Connection(_ oauthConnection: NaverThirdPartyLoginConnection!, didFailWithError error: Error!) {
+        NaverThirdPartyLoginConnection.getSharedInstance().requestDeleteToken()
     }
 }
