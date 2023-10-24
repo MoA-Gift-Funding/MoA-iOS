@@ -9,6 +9,7 @@ import UIKit
 import Foundation
 import KakaoSDKUser
 import NaverThirdPartyLogin
+import GoogleSignIn
 
 class SignInViewController: UIViewController {
     
@@ -43,6 +44,12 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func googleButtonDidTap(_ sender: UIButton) {
+        GIDSignIn.sharedInstance.signIn(withPresenting: self) { [weak self] signInResult, _ in
+            guard let self,
+                  let result = signInResult,
+                  let token = result.user.idToken?.tokenString else { return }
+            // 서버에 토큰을 보내기. 이 때 idToken, accessToken 차이에 주의할 것
+        }
     }
     
     func setUserInfo() {
@@ -83,3 +90,4 @@ extension SignInViewController: NaverThirdPartyLoginConnectionDelegate {
         NaverThirdPartyLoginConnection.getSharedInstance().requestDeleteToken()
     }
 }
+
