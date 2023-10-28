@@ -56,6 +56,7 @@
 		F224BE252ACAB29D009021D8 /* EnterUserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnterUserInfoViewController.xib; sourceTree = "<group>"; };
 		F286B3E22A88F3BB00295449 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F286B3E32A88F3BB00295449 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		F290BD532AED16B500E7B165 /* MoA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoA.entitlements; sourceTree = "<group>"; };
 		F2FAC4662A7654F2003D52DC /* MoA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FAC4692A7654F2003D52DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2FAC46B2A7654F2003D52DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +194,7 @@
 		F2FAC4682A7654F2003D52DC /* MoA */ = {
 			isa = PBXGroup;
 			children = (
+				F290BD532AED16B500E7B165 /* MoA.entitlements */,
 				F2FAC4772A7654F5003D52DC /* Info.plist */,
 				F286B3E82A88F4B200295449 /* Sources */,
 				F286B3E72A88F47A00295449 /* Resources */,
@@ -636,6 +638,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MoA/MoA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X4XX2MGPMQ;
@@ -668,6 +671,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MoA/MoA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X4XX2MGPMQ;
