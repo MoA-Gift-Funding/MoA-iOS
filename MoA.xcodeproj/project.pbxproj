@@ -12,6 +12,12 @@
 		927BFD431EADA1963B4B0926 /* Pods_MoA_MoAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F4BBBDCC0CF50EAEE0584E /* Pods_MoA_MoAUITests.framework */; };
 		F224BE262ACAB29D009021D8 /* EnterUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F224BE242ACAB29D009021D8 /* EnterUserInfoViewController.swift */; };
 		F224BE272ACAB29D009021D8 /* EnterUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F224BE252ACAB29D009021D8 /* EnterUserInfoViewController.xib */; };
+		F24B3BC92B258F3A00870FED /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B3BC82B258F3A00870FED /* FlowCoordinator.swift */; };
+		F24B3BCB2B258F7300870FED /* ApplicationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B3BCA2B258F7300870FED /* ApplicationFlowCoordinator.swift */; };
+		F24B3BCD2B25910400870FED /* FlowCoordinatorDependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B3BCC2B25910400870FED /* FlowCoordinatorDependencyProvider.swift */; };
+		F24B3BCF2B2591D200870FED /* OAuthSignInFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B3BCE2B2591D200870FED /* OAuthSignInFlowCoordinator.swift */; };
+		F24B3BD12B25944C00870FED /* OAuthSignInNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B3BD02B25944C00870FED /* OAuthSignInNavigator.swift */; };
+		F24B3BD32B25995D00870FED /* ApplicationComponentsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B3BD22B25995D00870FED /* ApplicationComponentsFactory.swift */; };
 		F286B3E42A88F3BB00295449 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F286B3E22A88F3BB00295449 /* SignInViewController.swift */; };
 		F286B3E52A88F3BB00295449 /* OAuthSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F286B3E32A88F3BB00295449 /* OAuthSignInViewController.xib */; };
 		F290BD562AF7B05200E7B165 /* ServicesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD552AF7B05200E7B165 /* ServicesProvider.swift */; };
@@ -78,6 +84,12 @@
 		E61E63B4A39FC455CA3EEB0E /* Pods-MoA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoA.debug.xcconfig"; path = "Target Support Files/Pods-MoA/Pods-MoA.debug.xcconfig"; sourceTree = "<group>"; };
 		F224BE242ACAB29D009021D8 /* EnterUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterUserInfoViewController.swift; sourceTree = "<group>"; };
 		F224BE252ACAB29D009021D8 /* EnterUserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnterUserInfoViewController.xib; sourceTree = "<group>"; };
+		F24B3BC82B258F3A00870FED /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		F24B3BCA2B258F7300870FED /* ApplicationFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlowCoordinator.swift; sourceTree = "<group>"; };
+		F24B3BCC2B25910400870FED /* FlowCoordinatorDependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorDependencyProvider.swift; sourceTree = "<group>"; };
+		F24B3BCE2B2591D200870FED /* OAuthSignInFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSignInFlowCoordinator.swift; sourceTree = "<group>"; };
+		F24B3BD02B25944C00870FED /* OAuthSignInNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSignInNavigator.swift; sourceTree = "<group>"; };
+		F24B3BD22B25995D00870FED /* ApplicationComponentsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationComponentsFactory.swift; sourceTree = "<group>"; };
 		F286B3E22A88F3BB00295449 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F286B3E32A88F3BB00295449 /* OAuthSignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OAuthSignInViewController.xib; sourceTree = "<group>"; };
 		F290BD532AED16B500E7B165 /* MoA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoA.entitlements; sourceTree = "<group>"; };
@@ -171,6 +183,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F24B3BC72B258F0A00870FED /* FlowCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F24B3BC82B258F3A00870FED /* FlowCoordinator.swift */,
+				F24B3BCA2B258F7300870FED /* ApplicationFlowCoordinator.swift */,
+				F24B3BD22B25995D00870FED /* ApplicationComponentsFactory.swift */,
+				F24B3BCC2B25910400870FED /* FlowCoordinatorDependencyProvider.swift */,
+				F24B3BCE2B2591D200870FED /* OAuthSignInFlowCoordinator.swift */,
+			);
+			path = FlowCoordinators;
+			sourceTree = "<group>";
+		};
 		F286B3E62A88F46900295449 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +216,7 @@
 		F286B3E82A88F4B200295449 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				F24B3BC72B258F0A00870FED /* FlowCoordinators */,
 				F286B3E92A88F4D400295449 /* Scenes */,
 				F290BD6A2B0107B100E7B165 /* UseCases */,
 				F290BD542AF6556F00E7B165 /* Services */,
@@ -287,6 +312,7 @@
 		F2D9BB8E2B24A946007F09CF /* OAuthSignIn */ = {
 			isa = PBXGroup;
 			children = (
+				F24B3BD02B25944C00870FED /* OAuthSignInNavigator.swift */,
 				F2D9BB952B255505007F09CF /* OAuthSignInModelType.swift */,
 				F2D9BB972B255523007F09CF /* OAuthSignInViewModel.swift */,
 				F2D9BB8F2B24A9EB007F09CF /* OAuthSignInViewController.swift */,
@@ -597,7 +623,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F290BD692B01075800E7B165 /* Scheduler.swift in Sources */,
+				F24B3BD32B25995D00870FED /* ApplicationComponentsFactory.swift in Sources */,
 				F290BD592AF7BE8F00E7B165 /* NetworkServiceType.swift in Sources */,
+				F24B3BC92B258F3A00870FED /* FlowCoordinator.swift in Sources */,
+				F24B3BCD2B25910400870FED /* FlowCoordinatorDependencyProvider.swift in Sources */,
 				F224BE262ACAB29D009021D8 /* EnterUserInfoViewController.swift in Sources */,
 				F2D9BB982B255523007F09CF /* OAuthSignInViewModel.swift in Sources */,
 				F290BD5D2AF7C7F900E7B165 /* NetworkService.swift in Sources */,
@@ -610,11 +639,14 @@
 				F2D9BB902B24A9EB007F09CF /* OAuthSignInViewController.swift in Sources */,
 				F290BD622B01069900E7B165 /* ImageLoaderService.swift in Sources */,
 				F290BD752B04F71600E7B165 /* Resource+User.swift in Sources */,
+				F24B3BCB2B258F7300870FED /* ApplicationFlowCoordinator.swift in Sources */,
 				F290BD662B0106FC00E7B165 /* ImageCache.swift in Sources */,
 				F290BD6F2B03933400E7B165 /* User.swift in Sources */,
 				F290BD602B00F96800E7B165 /* Publisher+Utils.swift in Sources */,
 				F290BD6C2B01080500E7B165 /* UserUseCase.swift in Sources */,
 				F2D9BB962B255505007F09CF /* OAuthSignInModelType.swift in Sources */,
+				F24B3BCF2B2591D200870FED /* OAuthSignInFlowCoordinator.swift in Sources */,
+				F24B3BD12B25944C00870FED /* OAuthSignInNavigator.swift in Sources */,
 				F2FAC46A2A7654F2003D52DC /* AppDelegate.swift in Sources */,
 				F290BD562AF7B05200E7B165 /* ServicesProvider.swift in Sources */,
 				F2FAC46C2A7654F2003D52DC /* SceneDelegate.swift in Sources */,

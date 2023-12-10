@@ -47,6 +47,9 @@
                                     <state key="normal" title="네이버로 계속하기">
                                         <color key="titleColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="naverButtonDidTap:" destination="-1" eventType="touchUpInside" id="8Mn-0u-qZW"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nL7-7F-zQV">
                                     <rect key="frame" x="0.0" y="80.000000000000028" width="347" height="68"/>
@@ -60,6 +63,9 @@
                                     <state key="normal" title="카카오로 계속하기">
                                         <color key="titleColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="kakaoButtonDidTap:" destination="-1" eventType="touchUpInside" id="fE9-So-z2h"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LwT-UG-Bcg">
                                     <rect key="frame" x="0.0" y="160.00000000000003" width="347" height="68"/>
@@ -73,6 +79,9 @@
                                     <state key="normal" title="구글로 계속하기">
                                         <color key="titleColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="googleButtonDidTap:" destination="-1" eventType="touchUpInside" id="ekj-00-9Cq"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecM-8P-XFb">
                                     <rect key="frame" x="0.0" y="240" width="347" height="68"/>
@@ -86,6 +95,9 @@
                                     <state key="normal" title="애플로 계속하기">
                                         <color key="titleColor" red="0.60392156860000001" green="0.60392156860000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="appleButtonDidTap:" destination="-1" eventType="touchUpInside" id="mbM-jK-v6r"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>

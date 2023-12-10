@@ -52,6 +52,9 @@ class OAuthSignInViewController: UIViewController {
     }
     
     private func bind(to viewModel: OAuthSignInViewModelType) {
+        cancellables.forEach { $0.cancel() }
+        cancellables.removeAll()
+        
         let input = OAuthSignInViewModelInput(signIn: signIn.eraseToAnyPublisher())
         
         let output = viewModel.transform(input: input)
@@ -91,7 +94,6 @@ class OAuthSignInViewController: UIViewController {
                     }
                     print(accessToken)
                     self.signIn.send(accessToken)
-                    
                 }
             }
         } else {
