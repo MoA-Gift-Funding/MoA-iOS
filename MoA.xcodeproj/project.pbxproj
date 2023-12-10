@@ -7,19 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		81A2B0E2910AD3E30FE57C13 /* Pods_MoA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD9530A994224E245DA47E3 /* Pods_MoA.framework */; };
-		CB317A2A43AD7016538B09D4 /* Pods_MoATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1749F60CD8EC204E288DC8F0 /* Pods_MoATests.framework */; };
-		EBB7329BCFC6249DAE846D2F /* Pods_MoA_MoAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497ECA7100BEE1C96373BA30 /* Pods_MoA_MoAUITests.framework */; };
+		426782CF02A2A6FF4E91EF04 /* Pods_MoA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD905FBAA5CBF2ABBA0EC69 /* Pods_MoA.framework */; };
+		79B63BAF82F788EBBBE07D3D /* Pods_MoATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6822EE8B711559DD161D2767 /* Pods_MoATests.framework */; };
+		927BFD431EADA1963B4B0926 /* Pods_MoA_MoAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F4BBBDCC0CF50EAEE0584E /* Pods_MoA_MoAUITests.framework */; };
 		F224BE262ACAB29D009021D8 /* EnterUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F224BE242ACAB29D009021D8 /* EnterUserInfoViewController.swift */; };
 		F224BE272ACAB29D009021D8 /* EnterUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F224BE252ACAB29D009021D8 /* EnterUserInfoViewController.xib */; };
-		F224BE302AD383AB009021D8 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = F224BE2F2AD383AB009021D8 /* KakaoSDK */; };
 		F286B3E42A88F3BB00295449 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F286B3E22A88F3BB00295449 /* SignInViewController.swift */; };
-		F286B3E52A88F3BB00295449 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F286B3E32A88F3BB00295449 /* SignInViewController.xib */; };
-		F290BD522AE5419200E7B165 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F290BD512AE5419200E7B165 /* GoogleSignInSwift */; };
+		F286B3E52A88F3BB00295449 /* OAuthSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F286B3E32A88F3BB00295449 /* OAuthSignInViewController.xib */; };
+		F290BD562AF7B05200E7B165 /* ServicesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD552AF7B05200E7B165 /* ServicesProvider.swift */; };
+		F290BD592AF7BE8F00E7B165 /* NetworkServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD582AF7BE8F00E7B165 /* NetworkServiceType.swift */; };
+		F290BD5B2AF7C5AB00E7B165 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD5A2AF7C5AB00E7B165 /* Resource.swift */; };
+		F290BD5D2AF7C7F900E7B165 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD5C2AF7C7F900E7B165 /* NetworkService.swift */; };
+		F290BD602B00F96800E7B165 /* Publisher+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD5F2B00F96800E7B165 /* Publisher+Utils.swift */; };
+		F290BD622B01069900E7B165 /* ImageLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD612B01069900E7B165 /* ImageLoaderService.swift */; };
+		F290BD642B0106D000E7B165 /* ImageLoaderServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD632B0106D000E7B165 /* ImageLoaderServiceType.swift */; };
+		F290BD662B0106FC00E7B165 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD652B0106FC00E7B165 /* ImageCache.swift */; };
+		F290BD692B01075800E7B165 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD682B01075800E7B165 /* Scheduler.swift */; };
+		F290BD6C2B01080500E7B165 /* UserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD6B2B01080500E7B165 /* UserUseCase.swift */; };
+		F290BD6F2B03933400E7B165 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD6E2B03933400E7B165 /* User.swift */; };
+		F290BD712B04F32900E7B165 /* AutoMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD702B04F32900E7B165 /* AutoMockable.swift */; };
+		F290BD732B04F47A00E7B165 /* ApiContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD722B04F47A00E7B165 /* ApiContants.swift */; };
+		F290BD752B04F71600E7B165 /* Resource+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD742B04F71600E7B165 /* Resource+User.swift */; };
+		F290BD772B09B92600E7B165 /* SignInViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD762B09B92600E7B165 /* SignInViewModelType.swift */; };
+		F290BD7A2B09B96600E7B165 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD792B09B96600E7B165 /* SignInViewModel.swift */; };
+		F290BD7C2B09BB8600E7B165 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD7B2B09BB8600E7B165 /* UserViewModel.swift */; };
+		F290BD7E2B0A2EA600E7B165 /* UserViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD7D2B0A2EA500E7B165 /* UserViewModelBuilder.swift */; };
+		F2D9BB822B1DF19D007F09CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FAC4742A7654F5003D52DC /* LaunchScreen.storyboard */; };
+		F2D9BB832B1DF1A3007F09CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FAC4722A7654F5003D52DC /* Assets.xcassets */; };
+		F2D9BB862B1DF2F4007F09CF /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F2D9BB852B1DF2F4007F09CF /* KakaoSDKAuth */; };
+		F2D9BB882B1DF2F4007F09CF /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = F2D9BB872B1DF2F4007F09CF /* KakaoSDKCommon */; };
+		F2D9BB8B2B1DF309007F09CF /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F2D9BB8A2B1DF309007F09CF /* GoogleSignInSwift */; };
+		F2D9BB8D2B1DF56A007F09CF /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = F2D9BB8C2B1DF56A007F09CF /* KakaoSDKUser */; };
+		F2D9BB902B24A9EB007F09CF /* OAuthSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9BB8F2B24A9EB007F09CF /* OAuthSignInViewController.swift */; };
+		F2D9BB922B24ABBF007F09CF /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D9BB912B24ABBF007F09CF /* SignInViewController.xib */; };
+		F2D9BB962B255505007F09CF /* OAuthSignInModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9BB952B255505007F09CF /* OAuthSignInModelType.swift */; };
+		F2D9BB982B255523007F09CF /* OAuthSignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9BB972B255523007F09CF /* OAuthSignInViewModel.swift */; };
 		F2FAC46A2A7654F2003D52DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FAC4692A7654F2003D52DC /* AppDelegate.swift */; };
 		F2FAC46C2A7654F2003D52DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FAC46B2A7654F2003D52DC /* SceneDelegate.swift */; };
-		F2FAC4732A7654F5003D52DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FAC4722A7654F5003D52DC /* Assets.xcassets */; };
-		F2FAC4762A7654F5003D52DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FAC4742A7654F5003D52DC /* LaunchScreen.storyboard */; };
 		F2FAC4812A7654F6003D52DC /* MoATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FAC4802A7654F6003D52DC /* MoATests.swift */; };
 		F2FAC48B2A7654F6003D52DC /* MoAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FAC48A2A7654F6003D52DC /* MoAUITests.swift */; };
 		F2FAC48D2A7654F6003D52DC /* MoAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FAC48C2A7654F6003D52DC /* MoAUITestsLaunchTests.swift */; };
@@ -43,20 +67,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1749F60CD8EC204E288DC8F0 /* Pods_MoATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		17B0010CF8EA612894B658CB /* Pods-MoA-MoAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoA-MoAUITests.release.xcconfig"; path = "Target Support Files/Pods-MoA-MoAUITests/Pods-MoA-MoAUITests.release.xcconfig"; sourceTree = "<group>"; };
-		1829E426A6A08E3112D1A6C7 /* Pods-MoA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoA.debug.xcconfig"; path = "Target Support Files/Pods-MoA/Pods-MoA.debug.xcconfig"; sourceTree = "<group>"; };
-		3FD9530A994224E245DA47E3 /* Pods_MoA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		497ECA7100BEE1C96373BA30 /* Pods_MoA_MoAUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoA_MoAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		63B105081724D57F2CC539D6 /* Pods-MoATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoATests.release.xcconfig"; path = "Target Support Files/Pods-MoATests/Pods-MoATests.release.xcconfig"; sourceTree = "<group>"; };
-		7E9049D2C2EC9194E6F8AD79 /* Pods-MoA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoA.release.xcconfig"; path = "Target Support Files/Pods-MoA/Pods-MoA.release.xcconfig"; sourceTree = "<group>"; };
-		AB56A00EB7A7340460381F37 /* Pods-MoA-MoAUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoA-MoAUITests.debug.xcconfig"; path = "Target Support Files/Pods-MoA-MoAUITests/Pods-MoA-MoAUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E8993862614078FAC310F6CD /* Pods-MoATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoATests.debug.xcconfig"; path = "Target Support Files/Pods-MoATests/Pods-MoATests.debug.xcconfig"; sourceTree = "<group>"; };
+		0CD905FBAA5CBF2ABBA0EC69 /* Pods_MoA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D23ED8F7AC6C634923B55DA /* Pods-MoA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoA.release.xcconfig"; path = "Target Support Files/Pods-MoA/Pods-MoA.release.xcconfig"; sourceTree = "<group>"; };
+		1DA3FDF68FEA09CAA49D17F8 /* Pods-MoA-MoAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoA-MoAUITests.release.xcconfig"; path = "Target Support Files/Pods-MoA-MoAUITests/Pods-MoA-MoAUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4C6583BA43F7DEB809A7E531 /* Pods-MoATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoATests.debug.xcconfig"; path = "Target Support Files/Pods-MoATests/Pods-MoATests.debug.xcconfig"; sourceTree = "<group>"; };
+		6822EE8B711559DD161D2767 /* Pods_MoATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94F4BBBDCC0CF50EAEE0584E /* Pods_MoA_MoAUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoA_MoAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99DB2672CC1413E7FE00771E /* Pods-MoA-MoAUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoA-MoAUITests.debug.xcconfig"; path = "Target Support Files/Pods-MoA-MoAUITests/Pods-MoA-MoAUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D94269AD5703085668E762D1 /* Pods-MoATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoATests.release.xcconfig"; path = "Target Support Files/Pods-MoATests/Pods-MoATests.release.xcconfig"; sourceTree = "<group>"; };
+		E61E63B4A39FC455CA3EEB0E /* Pods-MoA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoA.debug.xcconfig"; path = "Target Support Files/Pods-MoA/Pods-MoA.debug.xcconfig"; sourceTree = "<group>"; };
 		F224BE242ACAB29D009021D8 /* EnterUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterUserInfoViewController.swift; sourceTree = "<group>"; };
 		F224BE252ACAB29D009021D8 /* EnterUserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnterUserInfoViewController.xib; sourceTree = "<group>"; };
 		F286B3E22A88F3BB00295449 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		F286B3E32A88F3BB00295449 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		F286B3E32A88F3BB00295449 /* OAuthSignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OAuthSignInViewController.xib; sourceTree = "<group>"; };
 		F290BD532AED16B500E7B165 /* MoA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoA.entitlements; sourceTree = "<group>"; };
+		F290BD552AF7B05200E7B165 /* ServicesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesProvider.swift; sourceTree = "<group>"; };
+		F290BD582AF7BE8F00E7B165 /* NetworkServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceType.swift; sourceTree = "<group>"; };
+		F290BD5A2AF7C5AB00E7B165 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		F290BD5C2AF7C7F900E7B165 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F290BD5F2B00F96800E7B165 /* Publisher+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Utils.swift"; sourceTree = "<group>"; };
+		F290BD612B01069900E7B165 /* ImageLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderService.swift; sourceTree = "<group>"; };
+		F290BD632B0106D000E7B165 /* ImageLoaderServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderServiceType.swift; sourceTree = "<group>"; };
+		F290BD652B0106FC00E7B165 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		F290BD682B01075800E7B165 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		F290BD6B2B01080500E7B165 /* UserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUseCase.swift; sourceTree = "<group>"; };
+		F290BD6E2B03933400E7B165 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F290BD702B04F32900E7B165 /* AutoMockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMockable.swift; sourceTree = "<group>"; };
+		F290BD722B04F47A00E7B165 /* ApiContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiContants.swift; sourceTree = "<group>"; };
+		F290BD742B04F71600E7B165 /* Resource+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource+User.swift"; sourceTree = "<group>"; };
+		F290BD762B09B92600E7B165 /* SignInViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModelType.swift; sourceTree = "<group>"; };
+		F290BD792B09B96600E7B165 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		F290BD7B2B09BB8600E7B165 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		F290BD7D2B0A2EA500E7B165 /* UserViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModelBuilder.swift; sourceTree = "<group>"; };
+		F2D9BB8F2B24A9EB007F09CF /* OAuthSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSignInViewController.swift; sourceTree = "<group>"; };
+		F2D9BB912B24ABBF007F09CF /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		F2D9BB952B255505007F09CF /* OAuthSignInModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSignInModelType.swift; sourceTree = "<group>"; };
+		F2D9BB972B255523007F09CF /* OAuthSignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSignInViewModel.swift; sourceTree = "<group>"; };
 		F2FAC4662A7654F2003D52DC /* MoA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FAC4692A7654F2003D52DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2FAC46B2A7654F2003D52DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,9 +121,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F290BD522AE5419200E7B165 /* GoogleSignInSwift in Frameworks */,
-				F224BE302AD383AB009021D8 /* KakaoSDK in Frameworks */,
-				81A2B0E2910AD3E30FE57C13 /* Pods_MoA.framework in Frameworks */,
+				F2D9BB882B1DF2F4007F09CF /* KakaoSDKCommon in Frameworks */,
+				F2D9BB862B1DF2F4007F09CF /* KakaoSDKAuth in Frameworks */,
+				F2D9BB8B2B1DF309007F09CF /* GoogleSignInSwift in Frameworks */,
+				F2D9BB8D2B1DF56A007F09CF /* KakaoSDKUser in Frameworks */,
+				426782CF02A2A6FF4E91EF04 /* Pods_MoA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB317A2A43AD7016538B09D4 /* Pods_MoATests.framework in Frameworks */,
+				79B63BAF82F788EBBBE07D3D /* Pods_MoATests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,19 +141,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBB7329BCFC6249DAE846D2F /* Pods_MoA_MoAUITests.framework in Frameworks */,
+				927BFD431EADA1963B4B0926 /* Pods_MoA_MoAUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4E69C6233ED7986122FBCC52 /* Frameworks */ = {
+		4DCE25E3B08DF683D23BB1F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3FD9530A994224E245DA47E3 /* Pods_MoA.framework */,
-				497ECA7100BEE1C96373BA30 /* Pods_MoA_MoAUITests.framework */,
-				1749F60CD8EC204E288DC8F0 /* Pods_MoATests.framework */,
+				0CD905FBAA5CBF2ABBA0EC69 /* Pods_MoA.framework */,
+				94F4BBBDCC0CF50EAEE0584E /* Pods_MoA_MoAUITests.framework */,
+				6822EE8B711559DD161D2767 /* Pods_MoATests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,12 +161,12 @@
 		74EC63F020CE35DD1A7491E6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1829E426A6A08E3112D1A6C7 /* Pods-MoA.debug.xcconfig */,
-				7E9049D2C2EC9194E6F8AD79 /* Pods-MoA.release.xcconfig */,
-				AB56A00EB7A7340460381F37 /* Pods-MoA-MoAUITests.debug.xcconfig */,
-				17B0010CF8EA612894B658CB /* Pods-MoA-MoAUITests.release.xcconfig */,
-				E8993862614078FAC310F6CD /* Pods-MoATests.debug.xcconfig */,
-				63B105081724D57F2CC539D6 /* Pods-MoATests.release.xcconfig */,
+				E61E63B4A39FC455CA3EEB0E /* Pods-MoA.debug.xcconfig */,
+				1D23ED8F7AC6C634923B55DA /* Pods-MoA.release.xcconfig */,
+				99DB2672CC1413E7FE00771E /* Pods-MoA-MoAUITests.debug.xcconfig */,
+				1DA3FDF68FEA09CAA49D17F8 /* Pods-MoA-MoAUITests.release.xcconfig */,
+				4C6583BA43F7DEB809A7E531 /* Pods-MoATests.debug.xcconfig */,
+				D94269AD5703085668E762D1 /* Pods-MoATests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -126,8 +174,8 @@
 		F286B3E62A88F46900295449 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				F2FAC4692A7654F2003D52DC /* AppDelegate.swift */,
-				F2FAC46B2A7654F2003D52DC /* SceneDelegate.swift */,
+				F290BD5F2B00F96800E7B165 /* Publisher+Utils.swift */,
+				F290BD702B04F32900E7B165 /* AutoMockable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -145,7 +193,11 @@
 			isa = PBXGroup;
 			children = (
 				F286B3E92A88F4D400295449 /* Scenes */,
+				F290BD6A2B0107B100E7B165 /* UseCases */,
+				F290BD542AF6556F00E7B165 /* Services */,
 				F286B3E62A88F46900295449 /* Utils */,
+				F2FAC4692A7654F2003D52DC /* AppDelegate.swift */,
+				F2FAC46B2A7654F2003D52DC /* SceneDelegate.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -153,7 +205,9 @@
 		F286B3E92A88F4D400295449 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F2D9BB8E2B24A946007F09CF /* OAuthSignIn */,
 				F286B3EA2A88F4E600295449 /* SigeIn */,
+				F290BD782B09B93900E7B165 /* EnterUserInfo */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -161,12 +215,84 @@
 		F286B3EA2A88F4E600295449 /* SigeIn */ = {
 			isa = PBXGroup;
 			children = (
-				F224BE242ACAB29D009021D8 /* EnterUserInfoViewController.swift */,
-				F224BE252ACAB29D009021D8 /* EnterUserInfoViewController.xib */,
+				F290BD762B09B92600E7B165 /* SignInViewModelType.swift */,
+				F290BD792B09B96600E7B165 /* SignInViewModel.swift */,
 				F286B3E22A88F3BB00295449 /* SignInViewController.swift */,
-				F286B3E32A88F3BB00295449 /* SignInViewController.xib */,
+				F2D9BB912B24ABBF007F09CF /* SignInViewController.xib */,
+				F290BD7B2B09BB8600E7B165 /* UserViewModel.swift */,
+				F290BD7D2B0A2EA500E7B165 /* UserViewModelBuilder.swift */,
 			);
 			path = SigeIn;
+			sourceTree = "<group>";
+		};
+		F290BD542AF6556F00E7B165 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F290BD552AF7B05200E7B165 /* ServicesProvider.swift */,
+				F290BD572AF7BE6600E7B165 /* Network */,
+				F290BD5E2B00F88000E7B165 /* ImageLoader */,
+				F290BD682B01075800E7B165 /* Scheduler.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F290BD572AF7BE6600E7B165 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F290BD582AF7BE8F00E7B165 /* NetworkServiceType.swift */,
+				F290BD5A2AF7C5AB00E7B165 /* Resource.swift */,
+				F290BD5C2AF7C7F900E7B165 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F290BD5E2B00F88000E7B165 /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				F290BD612B01069900E7B165 /* ImageLoaderService.swift */,
+				F290BD632B0106D000E7B165 /* ImageLoaderServiceType.swift */,
+				F290BD652B0106FC00E7B165 /* ImageCache.swift */,
+			);
+			path = ImageLoader;
+			sourceTree = "<group>";
+		};
+		F290BD6A2B0107B100E7B165 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				F290BD6B2B01080500E7B165 /* UserUseCase.swift */,
+				F290BD722B04F47A00E7B165 /* ApiContants.swift */,
+				F290BD742B04F71600E7B165 /* Resource+User.swift */,
+				F290BD6D2B03923900E7B165 /* Entities */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		F290BD6D2B03923900E7B165 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F290BD6E2B03933400E7B165 /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F290BD782B09B93900E7B165 /* EnterUserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				F224BE242ACAB29D009021D8 /* EnterUserInfoViewController.swift */,
+				F224BE252ACAB29D009021D8 /* EnterUserInfoViewController.xib */,
+			);
+			path = EnterUserInfo;
+			sourceTree = "<group>";
+		};
+		F2D9BB8E2B24A946007F09CF /* OAuthSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				F2D9BB952B255505007F09CF /* OAuthSignInModelType.swift */,
+				F2D9BB972B255523007F09CF /* OAuthSignInViewModel.swift */,
+				F2D9BB8F2B24A9EB007F09CF /* OAuthSignInViewController.swift */,
+				F286B3E32A88F3BB00295449 /* OAuthSignInViewController.xib */,
+			);
+			path = OAuthSignIn;
 			sourceTree = "<group>";
 		};
 		F2FAC45D2A7654F2003D52DC = {
@@ -177,7 +303,7 @@
 				F2FAC4892A7654F6003D52DC /* MoAUITests */,
 				F2FAC4672A7654F2003D52DC /* Products */,
 				74EC63F020CE35DD1A7491E6 /* Pods */,
-				4E69C6233ED7986122FBCC52 /* Frameworks */,
+				4DCE25E3B08DF683D23BB1F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -226,11 +352,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2FAC4902A7654F6003D52DC /* Build configuration list for PBXNativeTarget "MoA" */;
 			buildPhases = (
-				8B7120855DE90D3E33DBD104 /* [CP] Check Pods Manifest.lock */,
+				BD9F910917376F442B46C196 /* [CP] Check Pods Manifest.lock */,
 				F2FAC4622A7654F2003D52DC /* Sources */,
 				F2FAC4632A7654F2003D52DC /* Frameworks */,
 				F2FAC4642A7654F2003D52DC /* Resources */,
-				DE15A46888B57020583CC494 /* [CP] Embed Pods Frameworks */,
+				7BFCD594CF9BB8823C8FBCA6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,8 +364,10 @@
 			);
 			name = MoA;
 			packageProductDependencies = (
-				F224BE2F2AD383AB009021D8 /* KakaoSDK */,
-				F290BD512AE5419200E7B165 /* GoogleSignInSwift */,
+				F2D9BB852B1DF2F4007F09CF /* KakaoSDKAuth */,
+				F2D9BB872B1DF2F4007F09CF /* KakaoSDKCommon */,
+				F2D9BB8A2B1DF309007F09CF /* GoogleSignInSwift */,
+				F2D9BB8C2B1DF56A007F09CF /* KakaoSDKUser */,
 			);
 			productName = MoA;
 			productReference = F2FAC4662A7654F2003D52DC /* MoA.app */;
@@ -249,7 +377,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2FAC4932A7654F6003D52DC /* Build configuration list for PBXNativeTarget "MoATests" */;
 			buildPhases = (
-				8CCC6869905162E7E4F95357 /* [CP] Check Pods Manifest.lock */,
+				8EDC15592965CCB4A1D1A573 /* [CP] Check Pods Manifest.lock */,
 				F2FAC4782A7654F6003D52DC /* Sources */,
 				F2FAC4792A7654F6003D52DC /* Frameworks */,
 				F2FAC47A2A7654F6003D52DC /* Resources */,
@@ -268,11 +396,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2FAC4962A7654F6003D52DC /* Build configuration list for PBXNativeTarget "MoAUITests" */;
 			buildPhases = (
-				8746718A23DE8A4961D8C196 /* [CP] Check Pods Manifest.lock */,
+				52C7D4343073C88D803858EB /* [CP] Check Pods Manifest.lock */,
 				F2FAC4822A7654F6003D52DC /* Sources */,
 				F2FAC4832A7654F6003D52DC /* Frameworks */,
 				F2FAC4842A7654F6003D52DC /* Resources */,
-				DC34C643AF7650F14AAC90BA /* [CP] Embed Pods Frameworks */,
+				FD81014DF58C097CABB02A13 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,8 +445,8 @@
 			);
 			mainGroup = F2FAC45D2A7654F2003D52DC;
 			packageReferences = (
-				F224BE2E2AD383AB009021D8 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
-				F290BD502AE5419200E7B165 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				F2D9BB842B1DF2F4007F09CF /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+				F2D9BB892B1DF309007F09CF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = F2FAC4672A7654F2003D52DC /* Products */;
 			projectDirPath = "";
@@ -336,10 +464,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D9BB922B24ABBF007F09CF /* SignInViewController.xib in Resources */,
+				F2D9BB832B1DF1A3007F09CF /* Assets.xcassets in Resources */,
+				F2D9BB822B1DF19D007F09CF /* LaunchScreen.storyboard in Resources */,
 				F224BE272ACAB29D009021D8 /* EnterUserInfoViewController.xib in Resources */,
-				F2FAC4762A7654F5003D52DC /* LaunchScreen.storyboard in Resources */,
-				F286B3E52A88F3BB00295449 /* SignInViewController.xib in Resources */,
-				F2FAC4732A7654F5003D52DC /* Assets.xcassets in Resources */,
+				F286B3E52A88F3BB00295449 /* OAuthSignInViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +489,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8746718A23DE8A4961D8C196 /* [CP] Check Pods Manifest.lock */ = {
+		52C7D4343073C88D803858EB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -382,29 +511,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8B7120855DE90D3E33DBD104 /* [CP] Check Pods Manifest.lock */ = {
+		7BFCD594CF9BB8823C8FBCA6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoA/Pods-MoA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MoA-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-MoA/Pods-MoA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoA/Pods-MoA-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8CCC6869905162E7E4F95357 /* [CP] Check Pods Manifest.lock */ = {
+		8EDC15592965CCB4A1D1A573 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -426,7 +550,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DC34C643AF7650F14AAC90BA /* [CP] Embed Pods Frameworks */ = {
+		BD9F910917376F442B46C196 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD81014DF58C097CABB02A13 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -443,23 +589,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoA-MoAUITests/Pods-MoA-MoAUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DE15A46888B57020583CC494 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MoA/Pods-MoA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MoA/Pods-MoA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoA/Pods-MoA-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -467,10 +596,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F290BD692B01075800E7B165 /* Scheduler.swift in Sources */,
+				F290BD592AF7BE8F00E7B165 /* NetworkServiceType.swift in Sources */,
 				F224BE262ACAB29D009021D8 /* EnterUserInfoViewController.swift in Sources */,
+				F2D9BB982B255523007F09CF /* OAuthSignInViewModel.swift in Sources */,
+				F290BD5D2AF7C7F900E7B165 /* NetworkService.swift in Sources */,
+				F290BD7A2B09B96600E7B165 /* SignInViewModel.swift in Sources */,
+				F290BD712B04F32900E7B165 /* AutoMockable.swift in Sources */,
 				F286B3E42A88F3BB00295449 /* SignInViewController.swift in Sources */,
+				F290BD7E2B0A2EA600E7B165 /* UserViewModelBuilder.swift in Sources */,
+				F290BD642B0106D000E7B165 /* ImageLoaderServiceType.swift in Sources */,
+				F290BD732B04F47A00E7B165 /* ApiContants.swift in Sources */,
+				F2D9BB902B24A9EB007F09CF /* OAuthSignInViewController.swift in Sources */,
+				F290BD622B01069900E7B165 /* ImageLoaderService.swift in Sources */,
+				F290BD752B04F71600E7B165 /* Resource+User.swift in Sources */,
+				F290BD662B0106FC00E7B165 /* ImageCache.swift in Sources */,
+				F290BD6F2B03933400E7B165 /* User.swift in Sources */,
+				F290BD602B00F96800E7B165 /* Publisher+Utils.swift in Sources */,
+				F290BD6C2B01080500E7B165 /* UserUseCase.swift in Sources */,
+				F2D9BB962B255505007F09CF /* OAuthSignInModelType.swift in Sources */,
 				F2FAC46A2A7654F2003D52DC /* AppDelegate.swift in Sources */,
+				F290BD562AF7B05200E7B165 /* ServicesProvider.swift in Sources */,
 				F2FAC46C2A7654F2003D52DC /* SceneDelegate.swift in Sources */,
+				F290BD772B09B92600E7B165 /* SignInViewModelType.swift in Sources */,
+				F290BD7C2B09BB8600E7B165 /* UserViewModel.swift in Sources */,
+				F290BD5B2AF7C5AB00E7B165 /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,7 +784,7 @@
 		};
 		F2FAC4912A7654F6003D52DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1829E426A6A08E3112D1A6C7 /* Pods-MoA.debug.xcconfig */;
+			baseConfigurationReference = E61E63B4A39FC455CA3EEB0E /* Pods-MoA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -667,7 +817,7 @@
 		};
 		F2FAC4922A7654F6003D52DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E9049D2C2EC9194E6F8AD79 /* Pods-MoA.release.xcconfig */;
+			baseConfigurationReference = 1D23ED8F7AC6C634923B55DA /* Pods-MoA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -700,7 +850,7 @@
 		};
 		F2FAC4942A7654F6003D52DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8993862614078FAC310F6CD /* Pods-MoATests.debug.xcconfig */;
+			baseConfigurationReference = 4C6583BA43F7DEB809A7E531 /* Pods-MoATests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -721,7 +871,7 @@
 		};
 		F2FAC4952A7654F6003D52DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63B105081724D57F2CC539D6 /* Pods-MoATests.release.xcconfig */;
+			baseConfigurationReference = D94269AD5703085668E762D1 /* Pods-MoATests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -742,7 +892,7 @@
 		};
 		F2FAC4972A7654F6003D52DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB56A00EB7A7340460381F37 /* Pods-MoA-MoAUITests.debug.xcconfig */;
+			baseConfigurationReference = 99DB2672CC1413E7FE00771E /* Pods-MoA-MoAUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -761,7 +911,7 @@
 		};
 		F2FAC4982A7654F6003D52DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17B0010CF8EA612894B658CB /* Pods-MoA-MoAUITests.release.xcconfig */;
+			baseConfigurationReference = 1DA3FDF68FEA09CAA49D17F8 /* Pods-MoA-MoAUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -820,15 +970,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F224BE2E2AD383AB009021D8 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+		F2D9BB842B1DF2F4007F09CF /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.18.0;
+				minimumVersion = 2.19.0;
 			};
 		};
-		F290BD502AE5419200E7B165 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+		F2D9BB892B1DF309007F09CF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
 			requirement = {
@@ -839,15 +989,25 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F224BE2F2AD383AB009021D8 /* KakaoSDK */ = {
+		F2D9BB852B1DF2F4007F09CF /* KakaoSDKAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F224BE2E2AD383AB009021D8 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
-			productName = KakaoSDK;
+			package = F2D9BB842B1DF2F4007F09CF /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
 		};
-		F290BD512AE5419200E7B165 /* GoogleSignInSwift */ = {
+		F2D9BB872B1DF2F4007F09CF /* KakaoSDKCommon */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F290BD502AE5419200E7B165 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			package = F2D9BB842B1DF2F4007F09CF /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommon;
+		};
+		F2D9BB8A2B1DF309007F09CF /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F2D9BB892B1DF309007F09CF /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
+		};
+		F2D9BB8C2B1DF56A007F09CF /* KakaoSDKUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F2D9BB842B1DF2F4007F09CF /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKUser;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
