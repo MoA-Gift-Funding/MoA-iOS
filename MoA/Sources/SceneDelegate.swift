@@ -64,15 +64,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             _ = AuthController.handleOpenUrl(url: url)
         }
         
-        guard let scheme = url.scheme else { return }
-        if scheme.contains("com.googleusercontent.apps") {
-            GIDSignIn.sharedInstance.handle(url)
-        }
-        
-        
-        NaverThirdPartyLoginConnection
-            .getSharedInstance()
-            .receiveAccessToken(url)
+// TODO: url 구분하기
+//        guard let scheme = url.scheme else { return }
+//        if scheme.contains("com.googleusercontent.apps") {
+//            GIDSignIn.sharedInstance.handle(url)
+//        }
+//        
+//        
+//        NaverThirdPartyLoginConnection
+//            .getSharedInstance()
+//            .receiveAccessToken(url)
         
     }
     

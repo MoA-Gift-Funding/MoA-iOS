@@ -21,7 +21,9 @@ class SignInViewModel: SignInViewModelType {
     
     func transform(input: SignInViewModelInput) -> SignInViewModelOutput {
         let signIn = input.appear
-            .flatMap({[unowned self] _ in self.useCase.signIn(with: self.accessToken)})
+            .flatMap({[unowned self] _ in
+                self.useCase.signIn(with: self.accessToken)
+            })
             .map({ result -> SignInState in
                 switch result {
                     case .success(let user): return .success(self.viewModel(from: user))

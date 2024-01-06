@@ -92,12 +92,11 @@ class OAuthSignInViewController: UIViewController {
                     guard let accessToken = oauthToken?.accessToken else {
                         return
                     }
-                    print(accessToken)
                     self.signIn.send(accessToken)
                 }
             }
         } else {
-            print("안됨")
+            print("loginWithKakaoTalk() fail.")
         }
     }
     

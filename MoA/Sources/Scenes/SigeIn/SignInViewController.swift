@@ -17,9 +17,23 @@ import AuthenticationServices
 
 class SignInViewController: UIViewController {
     
+    @IBOutlet weak var signInProgressView: UIProgressView!
+    
+    @IBOutlet weak var nickNameTextField: UITextField!
+    @IBOutlet weak var nickNameModifyButton: UIButton!
+    
+    @IBOutlet weak var phoneNumberTextField: UITextField!
+    @IBOutlet weak var phoneNumberModifyButton: UIButton!
+    
+    @IBOutlet weak var birthdayTextField: UITextField!
+    @IBOutlet weak var birthdayModifyButton: UIButton!
+    
+    @IBOutlet weak var nextButton: UIButton!
+    
     private let viewModel: SignInViewModelType
     private var cancellables: [AnyCancellable] = []
     private let appear = PassthroughSubject<Void, Never>()
+    
     
     init(viewModel: SignInViewModelType) {
         self.viewModel = viewModel
@@ -38,11 +52,17 @@ class SignInViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        appear.send()
+        appear.send(())
     }
     
     private func configureUI() {
+        self.signInProgressView.progress  = 0.2
         
+        self.nickNameTextField.layer.cornerRadius = 8
+        self.phoneNumberTextField.layer.cornerRadius = 8
+        self.birthdayTextField.layer.cornerRadius = 8
+        
+        self.nextButton.layer.cornerRadius = 8
     }
     
     private func bind(to viewModel: SignInViewModelType) {
@@ -67,7 +87,9 @@ class SignInViewController: UIViewController {
     }
     
     private func show(_ user: UserViewModel) {
-        print(user.nickname)
+        nickNameTextField.text = user.nickname
+        phoneNumberTextField.text = user.phoneNumber
+        birthdayTextField.text = user.birthday
     }
 }
     

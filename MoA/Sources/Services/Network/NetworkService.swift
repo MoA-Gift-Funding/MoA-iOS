@@ -27,7 +27,6 @@ final class NetworkService: NetworkServiceType {
                 guard let response = response as? HTTPURLResponse else {
                     return .fail(NetworkError.invalidRequest)
                 }
-                
                 guard 200..<300 ~= response.statusCode else {
                     return .fail(NetworkError.dataLoadingError(statusCode: response.statusCode, data: data))
                 }
