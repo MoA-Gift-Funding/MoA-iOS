@@ -1,5 +1,5 @@
 //
-//  SignInViewModelType.swift
+//  EnterUserInfoViewModelType.swift
 //  MoA
 //
 //  Created by eunae on 2023/11/19.
@@ -9,19 +9,19 @@ import UIKit
 import Combine
 
 // INPUT
-struct SignInViewModelInput {
+struct EnterUserInfoViewModelInput {
     let appear: AnyPublisher<Void, Never>
 }
 
 // OUTPUT
-enum SignInState {
+enum EnterUserInfoState {
     case loading
     case success(UserViewModel)
     case failure(Error)
 }
 
-extension SignInState: Equatable {
-    static func == (lhs: SignInState, rhs: SignInState) -> Bool {
+extension EnterUserInfoState: Equatable {
+    static func == (lhs: EnterUserInfoState, rhs: EnterUserInfoState) -> Bool {
         switch (lhs, rhs) {
         case (.loading, .loading): return true
         case (.success(let lhsUser), .success(let rhsUser)): return lhsUser == rhsUser
@@ -31,8 +31,8 @@ extension SignInState: Equatable {
     }
 }
 
-typealias SignInViewModelOutput = AnyPublisher<SignInState, Never>
+typealias EnterUserInfoViewModelOutput = AnyPublisher<EnterUserInfoState, Never>
 
-protocol SignInViewModelType: AnyObject {
-    func transform(input: SignInViewModelInput) -> SignInViewModelOutput
+protocol EnterUserInfoViewModelType: AnyObject {
+    func transform(input: EnterUserInfoViewModelInput) -> EnterUserInfoViewModelOutput
 }

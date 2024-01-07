@@ -16,7 +16,7 @@
 		F24B3BCF2B2591D200870FED /* OAuthSignInFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B3BCE2B2591D200870FED /* OAuthSignInFlowCoordinator.swift */; };
 		F24B3BD12B25944C00870FED /* OAuthSignInNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B3BD02B25944C00870FED /* OAuthSignInNavigator.swift */; };
 		F24B3BD32B25995D00870FED /* ApplicationComponentsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B3BD22B25995D00870FED /* ApplicationComponentsFactory.swift */; };
-		F286B3E42A88F3BB00295449 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F286B3E22A88F3BB00295449 /* SignInViewController.swift */; };
+		F286B3E42A88F3BB00295449 /* EnterUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F286B3E22A88F3BB00295449 /* EnterUserInfoViewController.swift */; };
 		F286B3E52A88F3BB00295449 /* OAuthSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F286B3E32A88F3BB00295449 /* OAuthSignInViewController.xib */; };
 		F290BD562AF7B05200E7B165 /* ServicesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD552AF7B05200E7B165 /* ServicesProvider.swift */; };
 		F290BD592AF7BE8F00E7B165 /* NetworkServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD582AF7BE8F00E7B165 /* NetworkServiceType.swift */; };
@@ -32,8 +32,8 @@
 		F290BD712B04F32900E7B165 /* AutoMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD702B04F32900E7B165 /* AutoMockable.swift */; };
 		F290BD732B04F47A00E7B165 /* ApiContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD722B04F47A00E7B165 /* ApiContants.swift */; };
 		F290BD752B04F71600E7B165 /* Resource+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD742B04F71600E7B165 /* Resource+User.swift */; };
-		F290BD772B09B92600E7B165 /* SignInViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD762B09B92600E7B165 /* SignInViewModelType.swift */; };
-		F290BD7A2B09B96600E7B165 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD792B09B96600E7B165 /* SignInViewModel.swift */; };
+		F290BD772B09B92600E7B165 /* EnterUserInfoViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD762B09B92600E7B165 /* EnterUserInfoViewModelType.swift */; };
+		F290BD7A2B09B96600E7B165 /* EnterUserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD792B09B96600E7B165 /* EnterUserInfoViewModel.swift */; };
 		F290BD7C2B09BB8600E7B165 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD7B2B09BB8600E7B165 /* UserViewModel.swift */; };
 		F290BD7E2B0A2EA600E7B165 /* UserViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290BD7D2B0A2EA500E7B165 /* UserViewModelBuilder.swift */; };
 		F2D9BB822B1DF19D007F09CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FAC4742A7654F5003D52DC /* LaunchScreen.storyboard */; };
@@ -43,7 +43,7 @@
 		F2D9BB8B2B1DF309007F09CF /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F2D9BB8A2B1DF309007F09CF /* GoogleSignInSwift */; };
 		F2D9BB8D2B1DF56A007F09CF /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = F2D9BB8C2B1DF56A007F09CF /* KakaoSDKUser */; };
 		F2D9BB902B24A9EB007F09CF /* OAuthSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9BB8F2B24A9EB007F09CF /* OAuthSignInViewController.swift */; };
-		F2D9BB922B24ABBF007F09CF /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D9BB912B24ABBF007F09CF /* SignInViewController.xib */; };
+		F2D9BB922B24ABBF007F09CF /* EnterUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D9BB912B24ABBF007F09CF /* EnterUserInfoViewController.xib */; };
 		F2D9BB962B255505007F09CF /* OAuthSignInModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9BB952B255505007F09CF /* OAuthSignInModelType.swift */; };
 		F2D9BB982B255523007F09CF /* OAuthSignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D9BB972B255523007F09CF /* OAuthSignInViewModel.swift */; };
 		F2FAC46A2A7654F2003D52DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FAC4692A7654F2003D52DC /* AppDelegate.swift */; };
@@ -86,7 +86,7 @@
 		F24B3BCE2B2591D200870FED /* OAuthSignInFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSignInFlowCoordinator.swift; sourceTree = "<group>"; };
 		F24B3BD02B25944C00870FED /* OAuthSignInNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSignInNavigator.swift; sourceTree = "<group>"; };
 		F24B3BD22B25995D00870FED /* ApplicationComponentsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationComponentsFactory.swift; sourceTree = "<group>"; };
-		F286B3E22A88F3BB00295449 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		F286B3E22A88F3BB00295449 /* EnterUserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterUserInfoViewController.swift; sourceTree = "<group>"; };
 		F286B3E32A88F3BB00295449 /* OAuthSignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OAuthSignInViewController.xib; sourceTree = "<group>"; };
 		F290BD532AED16B500E7B165 /* MoA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoA.entitlements; sourceTree = "<group>"; };
 		F290BD552AF7B05200E7B165 /* ServicesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesProvider.swift; sourceTree = "<group>"; };
@@ -103,12 +103,12 @@
 		F290BD702B04F32900E7B165 /* AutoMockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMockable.swift; sourceTree = "<group>"; };
 		F290BD722B04F47A00E7B165 /* ApiContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiContants.swift; sourceTree = "<group>"; };
 		F290BD742B04F71600E7B165 /* Resource+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource+User.swift"; sourceTree = "<group>"; };
-		F290BD762B09B92600E7B165 /* SignInViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModelType.swift; sourceTree = "<group>"; };
-		F290BD792B09B96600E7B165 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		F290BD762B09B92600E7B165 /* EnterUserInfoViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterUserInfoViewModelType.swift; sourceTree = "<group>"; };
+		F290BD792B09B96600E7B165 /* EnterUserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterUserInfoViewModel.swift; sourceTree = "<group>"; };
 		F290BD7B2B09BB8600E7B165 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		F290BD7D2B0A2EA500E7B165 /* UserViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModelBuilder.swift; sourceTree = "<group>"; };
 		F2D9BB8F2B24A9EB007F09CF /* OAuthSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSignInViewController.swift; sourceTree = "<group>"; };
-		F2D9BB912B24ABBF007F09CF /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		F2D9BB912B24ABBF007F09CF /* EnterUserInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnterUserInfoViewController.xib; sourceTree = "<group>"; };
 		F2D9BB952B255505007F09CF /* OAuthSignInModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSignInModelType.swift; sourceTree = "<group>"; };
 		F2D9BB972B255523007F09CF /* OAuthSignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSignInViewModel.swift; sourceTree = "<group>"; };
 		F2FAC4662A7654F2003D52DC /* MoA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,22 +227,22 @@
 			isa = PBXGroup;
 			children = (
 				F2D9BB8E2B24A946007F09CF /* OAuthSignIn */,
-				F286B3EA2A88F4E600295449 /* SigeIn */,
+				F286B3EA2A88F4E600295449 /* EnterUserInfo */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		F286B3EA2A88F4E600295449 /* SigeIn */ = {
+		F286B3EA2A88F4E600295449 /* EnterUserInfo */ = {
 			isa = PBXGroup;
 			children = (
-				F290BD762B09B92600E7B165 /* SignInViewModelType.swift */,
-				F290BD792B09B96600E7B165 /* SignInViewModel.swift */,
-				F286B3E22A88F3BB00295449 /* SignInViewController.swift */,
-				F2D9BB912B24ABBF007F09CF /* SignInViewController.xib */,
+				F290BD762B09B92600E7B165 /* EnterUserInfoViewModelType.swift */,
+				F290BD792B09B96600E7B165 /* EnterUserInfoViewModel.swift */,
+				F286B3E22A88F3BB00295449 /* EnterUserInfoViewController.swift */,
+				F2D9BB912B24ABBF007F09CF /* EnterUserInfoViewController.xib */,
 				F290BD7B2B09BB8600E7B165 /* UserViewModel.swift */,
 				F290BD7D2B0A2EA500E7B165 /* UserViewModelBuilder.swift */,
 			);
-			path = SigeIn;
+			path = EnterUserInfo;
 			sourceTree = "<group>";
 		};
 		F290BD542AF6556F00E7B165 /* Services */ = {
@@ -476,7 +476,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2D9BB922B24ABBF007F09CF /* SignInViewController.xib in Resources */,
+				F2D9BB922B24ABBF007F09CF /* EnterUserInfoViewController.xib in Resources */,
 				F2D9BB832B1DF1A3007F09CF /* Assets.xcassets in Resources */,
 				F2D9BB822B1DF19D007F09CF /* LaunchScreen.storyboard in Resources */,
 				F286B3E52A88F3BB00295449 /* OAuthSignInViewController.xib in Resources */,
@@ -614,9 +614,9 @@
 				F24B3BCD2B25910400870FED /* FlowCoordinatorDependencyProvider.swift in Sources */,
 				F2D9BB982B255523007F09CF /* OAuthSignInViewModel.swift in Sources */,
 				F290BD5D2AF7C7F900E7B165 /* NetworkService.swift in Sources */,
-				F290BD7A2B09B96600E7B165 /* SignInViewModel.swift in Sources */,
+				F290BD7A2B09B96600E7B165 /* EnterUserInfoViewModel.swift in Sources */,
 				F290BD712B04F32900E7B165 /* AutoMockable.swift in Sources */,
-				F286B3E42A88F3BB00295449 /* SignInViewController.swift in Sources */,
+				F286B3E42A88F3BB00295449 /* EnterUserInfoViewController.swift in Sources */,
 				F290BD7E2B0A2EA600E7B165 /* UserViewModelBuilder.swift in Sources */,
 				F290BD642B0106D000E7B165 /* ImageLoaderServiceType.swift in Sources */,
 				F290BD732B04F47A00E7B165 /* ApiContants.swift in Sources */,
@@ -634,7 +634,7 @@
 				F2FAC46A2A7654F2003D52DC /* AppDelegate.swift in Sources */,
 				F290BD562AF7B05200E7B165 /* ServicesProvider.swift in Sources */,
 				F2FAC46C2A7654F2003D52DC /* SceneDelegate.swift in Sources */,
-				F290BD772B09B92600E7B165 /* SignInViewModelType.swift in Sources */,
+				F290BD772B09B92600E7B165 /* EnterUserInfoViewModelType.swift in Sources */,
 				F290BD7C2B09BB8600E7B165 /* UserViewModel.swift in Sources */,
 				F290BD5B2AF7C5AB00E7B165 /* Resource.swift in Sources */,
 			);

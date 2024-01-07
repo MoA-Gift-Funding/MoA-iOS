@@ -1,5 +1,5 @@
 //
-//  SignInViewController.swift
+//  EnterUserInfoViewController.swift
 //  MoA
 //
 //  Created by eunae on 2023/08/13.
@@ -9,33 +9,30 @@ import UIKit
 import Foundation
 import Combine
 
-import KakaoSDKUser
-import NaverThirdPartyLogin
-import GoogleSignIn
-import AuthenticationServices
 
-
-class SignInViewController: UIViewController {
+class EnterUserInfoViewController: UIViewController {
     
-    @IBOutlet weak var signInProgressView: UIProgressView!
+    @IBOutlet weak var nicknameView: UIView!
+    @IBOutlet weak var nicknameTextField: UITextField!
+    @IBOutlet weak var nicknameModifyButton: UIButton!
     
-    @IBOutlet weak var nickNameTextField: UITextField!
-    @IBOutlet weak var nickNameModifyButton: UIButton!
-    
+    @IBOutlet weak var phoneNumberView: UIView!
     @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var phoneNumberModifyButton: UIButton!
     
+    @IBOutlet weak var birthdayView: UIView!
     @IBOutlet weak var birthdayTextField: UITextField!
     @IBOutlet weak var birthdayModifyButton: UIButton!
     
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var nextButtonBottomConstraint: NSLayoutConstraint!
     
-    private let viewModel: SignInViewModelType
+    private let viewModel: EnterUserInfoViewModelType
     private var cancellables: [AnyCancellable] = []
     private let appear = PassthroughSubject<Void, Never>()
     
     
-    init(viewModel: SignInViewModelType) {
+    init(viewModel: EnterUserInfoViewModelType) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -46,7 +43,7 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureUI()
+        configure()
         bind(to: viewModel)
     }
     
@@ -55,19 +52,23 @@ class SignInViewController: UIViewController {
         appear.send(())
     }
     
-    private func configureUI() {
-        self.signInProgressView.progress  = 0.2
+    private func configure() {
+        self.navigationController?.navigationBar.topItem?.title = ""
         
-        self.nickNameTextField.layer.cornerRadius = 8
-        self.phoneNumberTextField.layer.cornerRadius = 8
-        self.birthdayTextField.layer.cornerRadius = 8
+        nicknameTextField.delegate = self
+        phoneNumberTextField.delegate = self
+        birthdayTextField.delegate = self
         
-        self.nextButton.layer.cornerRadius = 8
+        nicknameView.layer.cornerRadius = 8
+        phoneNumberView.layer.cornerRadius = 8
+        birthdayView.layer.cornerRadius = 8
+        
+        nextButton.layer.cornerRadius = 8
     }
     
-    private func bind(to viewModel: SignInViewModelType) {
+    private func bind(to viewModel: EnterUserInfoViewModelType) {
         cancellables.forEach { $0.cancel() }
-        let input = SignInViewModelInput(appear: appear.eraseToAnyPublisher())
+        let input = EnterUserInfoViewModelInput(appear: appear.eraseToAnyPublisher())
         
         let output = viewModel.transform(input: input)
         
@@ -76,7 +77,7 @@ class SignInViewController: UIViewController {
         }).store(in: &cancellables)
     }
     
-    private func render(_ state: SignInState) {
+    private func render(_ state: EnterUserInfoState) {
         switch state {
         case .loading:
             print("loading")
@@ -88,9 +89,20 @@ class SignInViewController: UIViewController {
     }
     
     private func show(_ user: UserViewModel) {
-        nickNameTextField.text = user.nickname
+        nicknameTextField.text = user.nickname
         phoneNumberTextField.text = user.phoneNumber
         birthdayTextField.text = user.birthday
+    }
+    
+    @objc func doneBtnClicked (sender: Any) {
+        view.endEditing(true)
+    }
+}
+
+extension EnterUserInfoViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        return true
     }
 }
     

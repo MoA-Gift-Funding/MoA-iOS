@@ -27,8 +27,8 @@ extension ApplicationComponentsFactory: ApplicationFlowCoordinatorDependencyProv
     }
     
     func signInController(_ accessToken: String) -> UIViewController {
-        let viewModel = SignInViewModel(accessToken: accessToken, useCase: useCase)
-        return SignInViewController(viewModel: viewModel)
+        let viewModel = EnterUserInfoViewModel(accessToken: accessToken, useCase: useCase)
+        return EnterUserInfoViewController(viewModel: viewModel)
     }
     
 }
