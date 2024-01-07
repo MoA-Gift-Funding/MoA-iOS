@@ -9,9 +9,9 @@ import Foundation
 
 extension Resource {
     
-    static func signIn(accessToken: String) -> Resource<User> {
+    static func signIn(accessToken: String) -> Resource<UserResponse> {
         let url = ApiContants.baseUrl.appendingPathComponent("/users/login/oauth2/kakao/app/\(accessToken)")
-        return Resource<User>(url: url)
+        return Resource<UserResponse>(url: url)
     }
     
 }

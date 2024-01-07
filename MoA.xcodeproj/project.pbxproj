@@ -10,8 +10,6 @@
 		426782CF02A2A6FF4E91EF04 /* Pods_MoA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD905FBAA5CBF2ABBA0EC69 /* Pods_MoA.framework */; };
 		79B63BAF82F788EBBBE07D3D /* Pods_MoATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6822EE8B711559DD161D2767 /* Pods_MoATests.framework */; };
 		927BFD431EADA1963B4B0926 /* Pods_MoA_MoAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F4BBBDCC0CF50EAEE0584E /* Pods_MoA_MoAUITests.framework */; };
-		F224BE262ACAB29D009021D8 /* EnterUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F224BE242ACAB29D009021D8 /* EnterUserInfoViewController.swift */; };
-		F224BE272ACAB29D009021D8 /* EnterUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F224BE252ACAB29D009021D8 /* EnterUserInfoViewController.xib */; };
 		F24B3BC92B258F3A00870FED /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B3BC82B258F3A00870FED /* FlowCoordinator.swift */; };
 		F24B3BCB2B258F7300870FED /* ApplicationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B3BCA2B258F7300870FED /* ApplicationFlowCoordinator.swift */; };
 		F24B3BCD2B25910400870FED /* FlowCoordinatorDependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B3BCC2B25910400870FED /* FlowCoordinatorDependencyProvider.swift */; };
@@ -82,8 +80,6 @@
 		99DB2672CC1413E7FE00771E /* Pods-MoA-MoAUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoA-MoAUITests.debug.xcconfig"; path = "Target Support Files/Pods-MoA-MoAUITests/Pods-MoA-MoAUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D94269AD5703085668E762D1 /* Pods-MoATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoATests.release.xcconfig"; path = "Target Support Files/Pods-MoATests/Pods-MoATests.release.xcconfig"; sourceTree = "<group>"; };
 		E61E63B4A39FC455CA3EEB0E /* Pods-MoA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoA.debug.xcconfig"; path = "Target Support Files/Pods-MoA/Pods-MoA.debug.xcconfig"; sourceTree = "<group>"; };
-		F224BE242ACAB29D009021D8 /* EnterUserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterUserInfoViewController.swift; sourceTree = "<group>"; };
-		F224BE252ACAB29D009021D8 /* EnterUserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnterUserInfoViewController.xib; sourceTree = "<group>"; };
 		F24B3BC82B258F3A00870FED /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		F24B3BCA2B258F7300870FED /* ApplicationFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFlowCoordinator.swift; sourceTree = "<group>"; };
 		F24B3BCC2B25910400870FED /* FlowCoordinatorDependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorDependencyProvider.swift; sourceTree = "<group>"; };
@@ -232,7 +228,6 @@
 			children = (
 				F2D9BB8E2B24A946007F09CF /* OAuthSignIn */,
 				F286B3EA2A88F4E600295449 /* SigeIn */,
-				F290BD782B09B93900E7B165 /* EnterUserInfo */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -298,15 +293,6 @@
 				F290BD6E2B03933400E7B165 /* User.swift */,
 			);
 			path = Entities;
-			sourceTree = "<group>";
-		};
-		F290BD782B09B93900E7B165 /* EnterUserInfo */ = {
-			isa = PBXGroup;
-			children = (
-				F224BE242ACAB29D009021D8 /* EnterUserInfoViewController.swift */,
-				F224BE252ACAB29D009021D8 /* EnterUserInfoViewController.xib */,
-			);
-			path = EnterUserInfo;
 			sourceTree = "<group>";
 		};
 		F2D9BB8E2B24A946007F09CF /* OAuthSignIn */ = {
@@ -493,7 +479,6 @@
 				F2D9BB922B24ABBF007F09CF /* SignInViewController.xib in Resources */,
 				F2D9BB832B1DF1A3007F09CF /* Assets.xcassets in Resources */,
 				F2D9BB822B1DF19D007F09CF /* LaunchScreen.storyboard in Resources */,
-				F224BE272ACAB29D009021D8 /* EnterUserInfoViewController.xib in Resources */,
 				F286B3E52A88F3BB00295449 /* OAuthSignInViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,7 +612,6 @@
 				F290BD592AF7BE8F00E7B165 /* NetworkServiceType.swift in Sources */,
 				F24B3BC92B258F3A00870FED /* FlowCoordinator.swift in Sources */,
 				F24B3BCD2B25910400870FED /* FlowCoordinatorDependencyProvider.swift in Sources */,
-				F224BE262ACAB29D009021D8 /* EnterUserInfoViewController.swift in Sources */,
 				F2D9BB982B255523007F09CF /* OAuthSignInViewModel.swift in Sources */,
 				F290BD5D2AF7C7F900E7B165 /* NetworkService.swift in Sources */,
 				F290BD7A2B09B96600E7B165 /* SignInViewModel.swift in Sources */,

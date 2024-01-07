@@ -11,22 +11,22 @@ import Combine
 
 struct UserViewModel {
     let accessToken: String
-    let email: String
-    let nickname: String
+    let email: String?
+    let nickname: String?
     let profileImage: String?
-    let birthday: String
-    let birthyear: String
-    let phoneNumber: String
-    let level: String
+    let birthday: String?
+    let birthyear: String?
+    let phoneNumber: String?
+    let level: String?
     
     init(accessToken: String,
-        email: String,
-        nickname: String,
+        email: String?,
+        nickname: String?,
         profileImage: String?,
-        birthday: String,
-        birthyear: String,
-        phoneNumber: String,
-        level: String) {
+        birthday: String?,
+        birthyear: String?,
+        phoneNumber: String?,
+        level: String?) {
         self.accessToken = accessToken
         self.email = email
         self.nickname = nickname

@@ -7,15 +7,30 @@
 
 import Foundation
 
+
+struct UserResponse {
+    let status: String
+    let message: String?
+    let data: User
+}
+
+extension UserResponse: Decodable {
+    enum CodingKeys: String, CodingKey {
+        case status
+        case message
+        case data
+    }
+}
+
 struct User {
     let accessToken: String
-    let email: String
-    let nickname: String
+    let email: String?
+    let nickname: String?
     let profileImage: String?
-    let birthday: String
-    let birthyear: String
-    let phoneNumber: String
-    let level: String
+    let birthday: String?
+    let birthyear: String?
+    let phoneNumber: String?
+    let level: String?
 }
 
 extension User: Hashable {

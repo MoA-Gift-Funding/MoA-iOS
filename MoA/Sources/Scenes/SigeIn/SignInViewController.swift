@@ -66,6 +66,7 @@ class SignInViewController: UIViewController {
     }
     
     private func bind(to viewModel: SignInViewModelType) {
+        cancellables.forEach { $0.cancel() }
         let input = SignInViewModelInput(appear: appear.eraseToAnyPublisher())
         
         let output = viewModel.transform(input: input)

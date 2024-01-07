@@ -22,8 +22,8 @@ final class UserUseCase: UserUseCaseType {
     
     func signIn(with accessToken: String) -> AnyPublisher<Result<User, Error>, Never> {
         return networkService
-            .load(Resource<User>.signIn(accessToken: accessToken))
-            .map{ .success($0) }
+            .load(Resource<UserResponse>.signIn(accessToken: accessToken))
+            .map{ .success($0.data) }
             .catch{ error -> AnyPublisher<Result<User, Error>, Never>
                 in .just(.failure(error)) }
             .subscribe(on: Scheduler.backgroundWorkScheduler)
